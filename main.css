@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Robot, sans-serif;
   }
-  header {
+  header, h2{
     background-color: rgba(214, 213, 213, 0.788);
     color: white;
     justify-content: center;
