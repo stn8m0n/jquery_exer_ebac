@@ -13,9 +13,12 @@
     text-align: center;
   }
 
+  .list {
+    display: none;
+  }
+
   h2 {
     text-align: center;
-    display: none;
   }
 
 form {
@@ -35,6 +38,7 @@ button {
     font-weight: bold;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
     
 }
 
@@ -42,4 +46,6 @@ button {
     text-align: center;
     font-size: 30px;
     padding: 20px;
+    list-style: none;
+    cursor: pointer;
   }

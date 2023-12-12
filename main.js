@@ -1,12 +1,15 @@
 $(document).ready(function(){
-   $("#send-button").click('submit'function(){
-       $('#list').slideDown();
+   $('send-button').click('submit', function (){
+       $('list').slideDown();
     });
-    $("form").on("submit", function (e) {
+
+    $('form').on('submit', function (e) {
         e.preventDefault();
-        const novaTarefa = $("#novo").val(); // Corrigido para "novaTarefa"
-        const novoItem = $(`<ol style="display:none">${novaTarefa}</ol>`); // Corrigido para `<li>`
-        $("#lista-tarefas").append(novoItem); // Adicionando o novo item à lista
+
+        const novaTarefa = $("#novo").val(); 
+        const novoItem = $(`<li style="display:none">${novaTarefa}</li>`);
+
+        $("#lista-tarefas").append(novoItem);
         $(novoItem).fadeIn();
       });
 });
