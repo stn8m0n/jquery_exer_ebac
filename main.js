@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   $('send-button').click('submit', function (){
+   $('#send-button').click('submit', function (){
        $('list').slideDown();
     });
 
