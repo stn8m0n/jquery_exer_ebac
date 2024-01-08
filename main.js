@@ -1,15 +1,44 @@
-$(document).ready(function(){
-   $('#send-button').click('submit', function (){
-       $('list').slideDown();
-    });
+$(document).ready(function () {
 
-    $('form').on('submit', function (e) {
-        e.preventDefault();
 
-        const novaTarefa = $("#novo").val(); 
-        const novoItem = $(`<li style="display:none">${novaTarefa}</li>`);
+  $(form).submit(function (e){
+    e.preventDefault()
 
-        $("#lista-tarefas").append(novoItem);
-        $(novoItem).fadeIn();
+    let tarefa = $("#tarefaInput").val();
+
+    console.log(tarefa)
+
+    if (tarefa === "") {
+      alert("O campo tarefa deve ser preenchido.");
+      return;
+    }
+
+    let tarefaCadastrada = false
+    $("#tarefas li").each(function (){
+      if($(this).text() === tarefa){
+        tarefaCadastrada = true
+      }
+    })
+    
+    if (tarefaCadastrada){
+      alert("A tarefa \"" + tarefa + "\" já existe.")
+      $("#tarefas li").each(function() {
+        if ($(this).text() === tarefa) {
+          $(this).remove();
+        }
       });
-});
+    }
+
+    $("#tarefas").append("<li>" + tarefa + "</li>")
+    
+    $("#tarefaInput").val("")
+   
+    $("#tarefas li").click(function() {
+      $(this).css("text-decoration", "line-through");
+    })
+
+    
+  })
+
+  
+})
