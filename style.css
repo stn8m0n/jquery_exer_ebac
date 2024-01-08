@@ -49,13 +49,6 @@ header{
   color: #eaeaea;
 }
 
-#cancelar {
-  width: 100%;
-  max-width: none;
-  background: #7d27df;
-  color: #eaeaea;
-}
-
 #cadastrar:hover{
   background: #5815a5;
   color: #eaeaea;
