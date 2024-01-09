@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 *{
   margin: 0;
@@ -14,7 +14,7 @@ ul {
 ul li:before {
   content: '✓';
   font-weight: bolder;
-  color: #2795df;
+  color: #27df55;
 }
 
 main{
@@ -32,10 +32,19 @@ main{
 header{
   padding: 2rem;
   color: #eaeaea;
-  background: #7d27df;
+  background: #2786df;
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+p{
+  color: #2786df;
+  font-weight: bold;
+  font-size: small;
+  padding: 10px;
+  
+
 }
 
 #formContainer{
@@ -45,36 +54,36 @@ header{
 #cadastrar {
   width: 100%;
   max-width: none;
-  background: #7d27df;
+  background: #2786df;
   color: #eaeaea;
 }
 
 #cadastrar:hover{
-  background: #5815a5;
+  background: #1553a5;
   color: #eaeaea;
   font-weight: bold;
-  outline: #7d27df;
+  outline: #2786df;
 }
 
 #form {
   display: flex;
   justify-content: space-between;
-  gap: .5rem;
+  gap: 10px;
 }
 
 
-#tarefaInput, #cadastrar #cancelar{
-  padding: .25rem;
+#tarefaInput #cadastrar #cancelar{
+  padding: 5px;
   width: 100%;
   max-width: none;
-  margin: 1rem 0;
+  margin: 2px 0;
   border-radius: 5px;
   border: none;
   outline: none;
 }
 
 #tarefaInput:focus{
-  outline: 1px solid #7d27df;
+  outline: 1px solid #2786df;
 }
 
 #tarefas{

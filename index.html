@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Fira+Sans:wght@400;700&family=Inter:wght@400;500&family=Nunito+Sans:wght@400;700&family=Nunito:ital@1&family=Poppins:ital,wght@0,600;1,400&family=Roboto:ital,wght@0,400;0,500;1,100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-  <title>To do List</title>
+  <title>Tasks</title>
 </head>
 <body>
   <main>
     <header>
       <div class="title">
-        <h2>Lista de Tarefas </h2>
+        <h2>To do List - Lista de Atividades </h2>
       </div>
     </header>
     <div id="formContainer">
       <form action="" id="form">
-        <input type="text" name="tarefas" id="tarefaInput" class="tarefasInput" placeholder="Tarefas">
+        <input type="text" name="tarefas" id="tarefaInput" class="tarefasInput" placeholder="Digite Atividades">
         <button type="submit" id="cadastrar">Cadastrar</button>
+        <button type="reset" id="cadastrar">Cancelar</button>
       </form>
+      <p>Click na atividade quando finalizada.</p>
       <ul id="tarefas"></ul>
     </div>
   </main>
