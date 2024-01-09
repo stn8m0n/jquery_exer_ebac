@@ -14,7 +14,7 @@ ul {
 ul li:before {
   content: '✓';
   font-weight: bolder;
-  color: #7d27df;
+  color: #2795df;
 }
 
 main{
@@ -63,7 +63,7 @@ header{
 }
 
 
-#tarefaInput, #cadastrar {
+#tarefaInput, #cadastrar #cancelar{
   padding: .25rem;
   width: 100%;
   max-width: none;
